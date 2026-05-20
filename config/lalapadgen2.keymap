@@ -87,7 +87,7 @@
     };
 
     macros {
-        bt_linux: bt_win {
+        bt_linux: bt_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -96,10 +96,10 @@
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 500>;
 
-            label = "BT_WIN";
+            label = "BT_LINUX";
         };
 
-        bt_win: bt_linux {
+        bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -108,7 +108,7 @@
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>;
 
-            label = "BT_LINUX";
+            label = "BT_WIN";
         };
 
         bt_mac: bt_mac {
@@ -131,25 +131,25 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W      &kp E         &kp R           &kp T                                      &kp Y        &kp U      &kp I           &kp O           &kp P
-&kp A              &kp S      &kp D         &kp F           &kp G                                      &kp H        &kp J      &kp K           &kp L           &kp SEMICOLON
-&mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V           &kp B                                      &kp N        &kp M      &kp COMMA       &kp PERIOD      &kp SLASH
-&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &kp LANGUAGE_1  &lt 2 SPACE  &kp LSHFT  &backspace_delete  &lt 3 ENTER  &kp LANG2  &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSLASH
-                   &none      &kp RIGHT     &kp DOWN        &kp LEFT     &kp UP     &kp UP             &kp LEFT     &kp DOWN   &kp RIGHT       &none
-&mkp LCLK          &mkp RCLK  &mkp MCLK                                                                                        &mkp LCLK       &mkp RCLK       &mkp MCLK
-&mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                  &mkp MB4     &mkp MB5   &kp LG(TAB)     &kp LG(D)       &kp LCTRL
+&kp Q              &kp W      &kp E         &kp R           &kp T                                      &kp Y        &kp U           &kp I           &kp O           &kp P
+&kp A              &kp S      &kp D         &kp F           &kp G                                      &kp H        &kp J           &kp K           &kp L           &kp SEMICOLON
+&mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V           &kp B                                      &kp N        &kp M           &kp COMMA       &kp PERIOD      &kp SLASH
+&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &kp LANGUAGE_2  &lt 2 SPACE  &kp LSHFT  &backspace_delete  &lt 3 ENTER  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSLASH
+                   &none      &kp RIGHT     &kp DOWN        &kp LEFT     &kp UP     &kp UP             &kp LEFT     &kp DOWN        &kp RIGHT       &none
+&mkp LCLK          &mkp RCLK  &mkp MCLK                                                                                             &mkp LCLK       &mkp RCLK       &mkp MCLK
+&mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                  &mkp MB4     &mkp MB5        &kp LG(TAB)     &kp LG(D)       &kp LCTRL
             >;
         };
 
         MAC_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                                                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans    &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans    &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans    &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&kp LWIN  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+          &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans            &trans                                                  &trans  &trans  &trans
+&trans    &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -183,12 +183,24 @@
             display-name = "system_layer";
             bindings = <
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &to 5                          &trans
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
          &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
 &trans   &trans   &trans                                                                                                   &trans                         &trans                         &trans
 &trans   &trans   &trans   &trans   &trans                   &trans                         &trans                         &trans                         &trans                         &trans
+            >;
+        };
+
+        LAYER_LAYER {
+            bindings = <
+&trans  &bt_win  &trans  &trans  &trans                  &trans  &trans   &trans  &trans     &trans
+&trans  &trans   &trans  &trans  &trans                  &trans  &trans   &trans  &bt_linux  &trans
+&trans  &trans   &trans  &trans  &trans                  &trans  &bt_mac  &trans  &trans     &trans
+&trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans     &trans
+        &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans   &trans                                                   &trans  &trans     &trans
+&trans  &trans   &trans  &trans  &trans                  &trans  &trans   &trans  &trans     &trans
             >;
         };
     };
