@@ -94,7 +94,10 @@
                 <&tog_off 0 &tog_off 0>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
-                <&macro_wait_time 500>;
+                <&macro_wait_time 500>,
+                <&tog_on 0>,
+                <&macro_wait_time 200>,
+                <&to 0>;
 
             label = "BT_LINUX";
         };
@@ -106,7 +109,10 @@
                 <&tog_off 0 &tog_off 0>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
-                <&macro_wait_time 500>;
+                <&macro_wait_time 500>,
+                <&tog_on 0>,
+                <&macro_wait_time 200>,
+                <&to 0>;
 
             label = "BT_WIN";
         };
@@ -119,7 +125,9 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 1>;
+                <&tog_on 1>,
+                <&macro_wait_time 200>,
+                <&to 1>;
 
             label = "BT_MAC";
         };
