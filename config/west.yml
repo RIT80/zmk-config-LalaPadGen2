@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/ShiniNet/
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: mentaldesk
+      url-base: https://github.com/mentaldesk
   projects:
     - name: zmk
       remote: zmkfirmware
