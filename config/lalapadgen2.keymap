@@ -67,6 +67,27 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        os_sel: os_selector {
+            compatible = "zmk,behavior-os-selector";
+            #binding-cells = <1>;
+        };
+
+        /* Ctrl on Windows/Linux, Cmd (GUI) on macOS */
+        okctrl: os_key_ctrl {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            /*          Win          Mac         Lin  */
+            bindings = <&kp LCTRL>, <&kp LGUI>, <&kp LCTRL>;
+        };
+
+        /* Alt on Windows/Linux, Option (Alt) on macOS — same key, shown for clarity */
+        okalt: os_key_alt {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            /*          Win          Mac        Lin  */
+            bindings = <&kp LALT>, <&kp LALT>, <&kp LALT>;
+        };
     };
 
     combos {
