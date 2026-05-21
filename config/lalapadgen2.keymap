@@ -1,12 +1,12 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/zip_dynamic_scale.h>
+#include <dt-bindings/zmk/oskey.h>
+#include <behaviors/oskey.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/oskey.h>
-#include <behaviors/oskey.dtsi>
 
 #define DEFAULT_LAYER   0
 #define SECONDARY_LAYER 1
@@ -43,7 +43,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_mo12";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 3>;
+            bindings = <&mo 1>, <&mo 2>;
         };
 
         tog_on: tog_on {
@@ -74,19 +74,49 @@
         };
 
         /* Ctrl on Windows/Linux, Cmd (GUI) on macOS */
-        okctrl: os_key_ctrl {
+
+        ok_ctrl: os_key_ctrl {
             compatible = "zmk,behavior-os-key";
             #binding-cells = <0>;
+
             /*          Win          Mac         Lin  */
+
             bindings = <&kp LCTRL>, <&kp LGUI>, <&kp LCTRL>;
         };
 
         /* Alt on Windows/Linux, Option (Alt) on macOS — same key, shown for clarity */
-        okalt: os_key_alt {
+
+        ok_win: os_key_win {
             compatible = "zmk,behavior-os-key";
             #binding-cells = <0>;
+
             /*          Win          Mac        Lin  */
-            bindings = <&kp LALT>, <&kp LALT>, <&kp LALT>;
+
+            bindings = <&kp LGUI>, <&kp LCTRL>, <&kp LGUI>;
+        };
+
+        ok_win_up: ok_win_up {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            bindings = <&kp LG(UP)>, <&kp LC(UP)>, <&kp LG(UP)>;
+
+            label = "OK_WIN_UP";
+        };
+
+        os_win_right: os_win_right {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT)>, <&kp LC(RIGHT)>, <&kp LG(RIGHT)>;
+
+            label = "OS_WIN_RIGHT";
+        };
+
+        os_win_left: os_win_left {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT)>, <&kp LC(LEFT)>, <&kp LG(LEFT)>;
+
+            label = "OS_WIN_LEFT";
         };
     };
 
@@ -148,9 +178,9 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 1>,
+                <&tog_on 0>,
                 <&macro_wait_time 200>,
-                <&to 1>;
+                <&to 0>;
 
             label = "BT_MAC";
         };
@@ -165,22 +195,10 @@
 &kp Q              &kp W      &kp E         &kp R           &kp T                                      &kp Y        &kp U           &kp I          &kp O       &kp P
 &kp A              &kp S      &kp D         &kp F           &kp G                                      &kp H        &kp J           &kp K          &kp L       &kp MINUS
 &mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V           &kp B                                      &kp N        &kp M           &kp COMMA      &kp PERIOD  &kp SLASH
-&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &kp LANGUAGE_2  &lt 2 SPACE  &kp LSHFT  &backspace_delete  &lt 3 ENTER  &kp LANGUAGE_1  &kp BACKSLASH  &kp EQUAL   &kp SEMICOLON
+&ok_ctrl           &ok_win    &kp LEFT_ALT  &kp LANGUAGE_2  &lt 1 SPACE  &kp LSHFT  &backspace_delete  &lt 2 ENTER  &kp LANGUAGE_1  &kp BACKSLASH  &kp EQUAL   &kp SEMICOLON
                    &none      &kp RIGHT     &kp DOWN        &kp LEFT     &kp UP     &kp UP             &kp LEFT     &kp DOWN        &kp RIGHT      &none
 &mkp LCLK          &mkp RCLK  &mkp MCLK                                                                                             &mkp LCLK      &mkp RCLK   &mkp MCLK
 &mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                  &mkp MB4     &mkp MB5        &kp LG(TAB)    &kp LG(D)   &kp LCTRL
-            >;
-        };
-
-        MAC_LAYER {
-            bindings = <
-&trans    &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans    &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans    &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&kp LWIN  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-          &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans            &trans                                                  &trans  &trans  &trans
-&trans    &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -214,7 +232,7 @@
             display-name = "system_layer";
             bindings = <
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &to 5                          &trans
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &to 4                          &trans
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
          &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
@@ -240,8 +258,8 @@
         compatible = "zmk,conditional-layers";
 
         Cond_Syslayer {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
