@@ -147,7 +147,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 500>,
-                <&tog_on 0 &os_sel>;
+                <&tog_on 0 &os_sel OS_LIN>;
 
             label = "BT_LINUX";
         };
@@ -160,7 +160,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
-                <&tog_on 0 &os_sel>;
+                <&tog_on 0 &os_sel OS_WIN>;
 
             label = "BT_WIN";
         };
@@ -173,7 +173,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 0 &os_sel>;
+                <&tog_on 0 &os_sel OS_MAC>;
 
             label = "BT_MAC";
         };
@@ -227,7 +227,7 @@
             bindings = <
 &none  &none       &none       &sys_reset  &none                      &bt_linux       &bt_win         &bt_mac         &none           &none
 &none  &sys_reset  &none       &none       &none                      &none           &none           &none           &none           &none
-&none  &none       &bt BT_CLR  &none       &bootloader                &zip_dyn_scale  &zip_dyn_scale  &zip_dyn_scale  &zip_dyn_scale  &zip_dyn_scale
+&none  &none       &bt BT_CLR  &none       &bootloader                &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &none  &none       &none       &none       &none        &none  &none  &none           &none           &none           &none           &none
        &none       &none       &none       &none        &none  &none  &none           &none           &none           &none
 &none  &none       &none                                                                              &none           &none           &none
