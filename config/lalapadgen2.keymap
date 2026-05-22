@@ -147,9 +147,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 500>,
-                <&tog_on 0>,
-                <&macro_wait_time 200>,
-                <&to 0>;
+                <&tog_on 0 &os_sel>;
 
             label = "BT_LINUX";
         };
@@ -162,9 +160,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
-                <&tog_on 0>,
-                <&macro_wait_time 200>,
-                <&to 0>;
+                <&tog_on 0 &os_sel>;
 
             label = "BT_WIN";
         };
@@ -177,9 +173,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 0>,
-                <&macro_wait_time 200>,
-                <&to 0>;
+                <&tog_on 0 &os_sel>;
 
             label = "BT_MAC";
         };
@@ -231,7 +225,7 @@
 
         SYSTEM_LAYER {
             bindings = <
-&none  &none       &none       &sys_reset  &none                      &kp N0          &kp N1          &kp N2          &kp N3          &kp N4
+&none  &none       &none       &sys_reset  &none                      &bt_linux       &bt_win         &bt_mac         &none           &none
 &none  &sys_reset  &none       &none       &none                      &none           &none           &none           &none           &none
 &none  &none       &bt BT_CLR  &none       &bootloader                &zip_dyn_scale  &zip_dyn_scale  &zip_dyn_scale  &zip_dyn_scale  &zip_dyn_scale
 &none  &none       &none       &none       &none        &none  &none  &none           &none           &none           &none           &none
