@@ -70,11 +70,11 @@ layers:
   - Gui+D
   - ⌃
   symbol:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '`'
   - '}'
   - '~'
@@ -96,7 +96,7 @@ layers:
   - /
   - ^
   - '~'
-  - {t: ▽, type: trans}
+  - ''
   - ^
   - '`'
   - '{'
@@ -159,14 +159,14 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - F11
   - F12
   - {t: ▽, type: trans}
