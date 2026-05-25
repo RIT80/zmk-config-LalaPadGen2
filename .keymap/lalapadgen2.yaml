@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - MINUS
+  - '-'
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
@@ -28,9 +28,9 @@ layers:
   - B
   - N
   - M
-  - COMMA
-  - PERIOD
-  - SLASH
+  - ','
+  - .
+  - /
   - '&ok_ctrl'
   - '&ok_win'
   - $$mdi:apple-keyboard-option$$
@@ -75,31 +75,31 @@ layers:
   - ''
   - ''
   - ''
-  - GRAVE
-  - PIPE
-  - PLUS
-  - LEFT BRACKET
-  - RIGHT BRACKET
-  - EXCLAMATION
-  - AT SIGN
-  - HASH
-  - DOLLAR
-  - PERCENT
-  - CARET
-  - AMPERSAND
-  - ASTERISK
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
-  - PLUS
-  - MINUS
-  - ASTRK
-  - SLASH
-  - EQUAL
-  - TILDE
+  - '`'
+  - '|'
+  - +
+  - '['
+  - ']'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - +
+  - '-'
+  - '*'
+  - /
+  - '='
+  - '~'
   - ''
-  - EQUAL
-  - LEFT BRACE
-  - RIGHT BRACE
+  - '='
+  - '{'
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
