@@ -20,38 +20,38 @@ layers:
   - J
   - K
   - L
-  - '-'
-  - {t: Z, h: LEFT SHIFT}
+  - MINUS
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
   - V
   - B
   - N
   - M
-  - ','
-  - .
-  - /
+  - COMMA
+  - PERIOD
+  - SLASH
   - '&ok_ctrl'
   - '&ok_win'
-  - LEFT ALT
-  - LANGUAGE 2
-  - {t: SPACE, h: symbol}
+  - $$mdi:apple-keyboard-option$$
+  - ABC
+  - {t: '$$mdi:keyboard-space$$', h: symbol}
   - LSHFT
-  - {t: BACKSPACE, s: DEL}
-  - {t: ENTER, h: number}
-  - LANGUAGE 1
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
+  - {t: '$$mdi:keyboard-return$$', h: number}
+  - あいう
   - '&os_prt_sc_clipboard'
   - '&ok_ctrl'
-  - RIGHT SHIFT
+  - $$mdi:apple-keyboard-shift$$
   - ''
-  - RIGHT
-  - DOWN
-  - LEFT
-  - UP
-  - UP
-  - LEFT
-  - DOWN
-  - RIGHT
+  - $$mdi:arrow-right$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-up$$
+  - $$mdi:arrow-up$$
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
   - ''
   - LCLK
   - RCLK
@@ -61,45 +61,45 @@ layers:
   - MCLK
   - '&mkp MB4'
   - '&mkp MB5'
-  - Gui+TAB
+  - Gui+$$mdi:keyboard-tab$$
   - Gui+D
-  - LCTRL
+  - $$mdi:apple-keyboard-control$$
   - '&mkp MB4'
   - '&mkp MB5'
-  - Gui+TAB
+  - Gui+$$mdi:keyboard-tab$$
   - Gui+D
-  - LCTRL
+  - $$mdi:apple-keyboard-control$$
   symbol:
   - ''
   - ''
   - ''
   - ''
   - ''
-  - '`'
-  - '|'
-  - +
-  - '['
-  - ']'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - +
-  - '-'
-  - '*'
-  - /
-  - '='
-  - '~'
+  - GRAVE
+  - PIPE
+  - PLUS
+  - LEFT BRACKET
+  - RIGHT BRACKET
+  - EXCLAMATION
+  - AT SIGN
+  - HASH
+  - DOLLAR
+  - PERCENT
+  - CARET
+  - AMPERSAND
+  - ASTERISK
+  - LEFT PARENTHESIS
+  - RIGHT PARENTHESIS
+  - PLUS
+  - MINUS
+  - ASTRK
+  - SLASH
+  - EQUAL
+  - TILDE
   - ''
-  - '='
-  - '{'
-  - '}'
+  - EQUAL
+  - LEFT BRACE
+  - RIGHT BRACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -278,8 +278,8 @@ layers:
   - ''
 combos:
 - p: [0, 1]
-  k: ESCAPE
+  k: ESC
 - p: [10, 11]
-  k: TAB
+  k: $$mdi:keyboard-tab$$
 - p: [21, 20]
   k: LSHIFT
