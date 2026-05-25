@@ -36,8 +36,8 @@ parse_config:
     SPACE: $$mdi:keyboard-space$$
     ENTER: $$mdi:keyboard-return$$
     TAB: $$mdi:keyboard-tab$$
-    LCTRL: $$mdi:apple-keyboard-control::
-    RCTRL: $$mdi:apple-keyboard-control::
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
     LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
     LEFT_GUI: $$mdi:apple-keyboard-command$$
