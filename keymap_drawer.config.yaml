@@ -6,8 +6,8 @@ parse_config:
     "&mkp LCLK": LCLK
     "&mkp RCLK": RCLK
     "&mkp MCLK": MCLK
-    "&ok_ctrl":  $$mdi:apple-keyboard-control$$/$$mdi:apple-keyboard-command$$
-    "&ok_win":  $$mdi:apple-keyboard-command$$/$$mdi:apple-keyboard-control$$
+    "&ok_ctrl": ⌃/⌘
+    "&ok_win":  ⊞/⌃
     "&os_prt_sc":  PrtSc
     "&bt BT_SEL 0":
       shifted: ""
