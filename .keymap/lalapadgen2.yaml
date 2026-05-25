@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - '-'
-  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
@@ -33,25 +33,25 @@ layers:
   - /
   - '&ok_ctrl'
   - '&ok_win'
-  - $$mdi:apple-keyboard-option$$
-  - ABC
-  - {t: '$$mdi:keyboard-space$$', h: symbol}
+  - LEFT ALT
+  - LANGUAGE 2
+  - {t: SPACE, h: symbol}
   - LSHFT
-  - {t: '$$mdi:backspace$$', s: DEL}
-  - {t: '$$mdi:keyboard-return$$', h: number}
-  - あいう
+  - {t: BACKSPACE, s: DEL}
+  - {t: ENTER, h: number}
+  - LANGUAGE 1
   - '&os_prt_sc_clipboard'
   - '&ok_ctrl'
-  - $$mdi:apple-keyboard-shift$$
+  - RIGHT SHIFT
   - ''
-  - $$mdi:chevron-right$$
-  - $$mdi:chevron-down$$
-  - $$mdi:chevron-left$$
-  - $$mdi:chevron-up$$
-  - $$mdi:chevron-up$$
-  - $$mdi:chevron-left$$
-  - $$mdi:chevron-down$$
-  - $$mdi:chevron-right$$
+  - RIGHT
+  - DOWN
+  - LEFT
+  - UP
+  - UP
+  - LEFT
+  - DOWN
+  - RIGHT
   - ''
   - LCLK
   - RCLK
@@ -61,14 +61,14 @@ layers:
   - MCLK
   - '&mkp MB4'
   - '&mkp MB5'
-  - Gui+Tab
+  - Gui+TAB
   - Gui+D
-  - ⌃
+  - LCTRL
   - '&mkp MB4'
   - '&mkp MB5'
-  - Gui+Tab
+  - Gui+TAB
   - Gui+D
-  - ⌃
+  - LCTRL
   symbol:
   - ''
   - ''
@@ -76,30 +76,30 @@ layers:
   - ''
   - ''
   - '`'
-  - '}'
-  - '~'
-  - '@'
+  - '|'
+  - +
   - '['
+  - ']'
   - '!'
-  - '"'
+  - '@'
   - '#'
   - $
   - '%'
+  - ^
   - '&'
-  - ''''
+  - '*'
   - (
   - )
-  - Shift+0
-  - '~'
+  - +
   - '-'
-  - (
+  - '*'
   - /
-  - ^
+  - '='
   - '~'
   - ''
-  - ^
-  - '`'
+  - '='
   - '{'
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -278,8 +278,8 @@ layers:
   - ''
 combos:
 - p: [0, 1]
-  k: ESC
+  k: ESCAPE
 - p: [10, 11]
-  k: Tab
+  k: TAB
 - p: [21, 20]
   k: LSHIFT
