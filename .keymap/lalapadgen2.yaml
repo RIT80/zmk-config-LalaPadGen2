@@ -31,8 +31,8 @@ layers:
   - ','
   - .
   - /
-  - $$mdi:apple-keyboard-control$$/$$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-command$$/$$mdi:apple-keyboard-control$$
+  - ⌃/⌘
+  - ⊞/⌃
   - $$mdi:apple-keyboard-option$$
   - ABC
   - {t: '$$mdi:keyboard-space$$', h: symbol}
@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: number}
   - あいう
   - '&os_prt_sc_clipboard'
-  - $$mdi:apple-keyboard-control$$/$$mdi:apple-keyboard-command$$
+  - ⌃/⌘
   - $$mdi:apple-keyboard-shift$$
   - ''
   - $$mdi:arrow-right$$
