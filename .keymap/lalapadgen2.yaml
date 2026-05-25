@@ -36,11 +36,11 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - ABC
   - {t: '$$mdi:keyboard-space$$', h: symbol}
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
   - {t: '$$mdi:keyboard-return$$', h: number}
   - あいう
-  - '&os_prt_sc_clipboard'
+  - PrtScClip
   - ⌃/⌘
   - $$mdi:apple-keyboard-shift$$
   - ''
@@ -284,7 +284,7 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [Default]
 - p: [21, 20]
-  k: $$mdi:apple-keyboard-shift$$
+  k: LSHIFT
   l: [Default]
 - p: [6, 7]
   k: ':'
