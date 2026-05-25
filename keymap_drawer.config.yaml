@@ -26,23 +26,6 @@ parse_config:
       shifted: ""
       tap: $$mdi:bluetooth-connect$$
       hold: 5
-    "&kp LS(NUMBER_1)": '!'
-    "&kp LS(NUMBER_2)": '"'
-    "&kp LS(NUMBER_3)": '#'
-    "&kp LS(NUMBER_4)": '$'
-    "&kp LS(NUMBER_5)": '%'
-    "&kp RS(NUMBER_6)": '&'
-    "&kp RS(NUMBER_7)": ''''
-    "&kp RS(NUMBER_8)": '('
-    "&kp RS(NUMBER_9)": ')'
-    "&kp LS(SINGLE_QUOTE)": '*'
-    "&kp LS(SEMICOLON)": '+'
-    "&kp RS(INT1)": '_'
-    "&kp RS(INT3)": '|'
-    "&kp LS(EQUAL)": '~'
-    "&kp LS(LEFT_BRACKET)": '`'
-    "&kp RS(RIGHT_BRACKET)": '{'
-    "&kp RS(BACKSLASH)": '}'
   zmk_keycode_map:
     BACKSPACE: $$mdi:backspace$$
     DELETE: $$mdi:backspace-reverse$$
