@@ -117,6 +117,14 @@
 
             label = "OS_WIN_LEFT";
         };
+
+        os_prt_sc_clipboard: os_prt_sc_clipboardt {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(S)>, <&kp LC(LS(LG(4)))>, <&kp LG(LS(S)>;
+
+            label = "OS_PRINT_SCREN_CLIPBOARD\\\\";
+        };
     };
 
     combos {
