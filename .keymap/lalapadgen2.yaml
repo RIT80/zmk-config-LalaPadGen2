@@ -40,9 +40,9 @@ layers:
   - {t: '$$mdi:backspace$$', s: DEL}
   - {t: '$$mdi:keyboard-return$$', h: number}
   - あいう
-  - ']'
-  - ^
-  - ;
+  - '&os_prt_sc_clipboard'
+  - '&ok_ctrl'
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - $$mdi:chevron-right$$
   - $$mdi:chevron-down$$
