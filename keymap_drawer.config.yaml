@@ -28,3 +28,25 @@ parse_config:
       hold: 5
   zmk_combos:
     MiddleClick: { align: top, o: 0.15 }
+  zmk_keycode_map:
+    ESCAPE: ESC
+    BACKSPACE: $$mdi:backspace$$
+    DELETE: $$mdi:backspace-reverse$$
+    DEL: $$mdi:backspace-reverse$$
+    SPACE: $$mdi:keyboard-space$$
+    ENTER: $$mdi:keyboard-return$$
+    TAB: $$mdi:keyboard-tab$$
+    LCTRL: $$mdi:apple-keyboard-control::
+    RCTRL: $$mdi:apple-keyboard-control::
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
+    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+    LEFT_GUI: $$mdi:apple-keyboard-command$$
+    RIGHT_GUI: $$mdi:apple-keyboard-command$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+    RIGHT_ALT: $$mdi:apple-keyboard-option$$
+    LANGUAGE_1: 'あいう'
+    LANGUAGE_2: 'ABC'
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
