@@ -147,30 +147,6 @@
             key-positions = <21 20>;
             layers = <0>;
         };
-
-        combo_colon {
-            bindings = <&kp COLON>;
-            key-positions = <6 7>;
-            layers = <0 1>;
-        };
-
-        combo_semi_colon {
-            bindings = <&kp SEMI>;
-            key-positions = <16 17>;
-            layers = <0 1>;
-        };
-
-        combo_double_quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <7 8>;
-            layers = <0 1>;
-        };
-
-        combo_single_quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <17 18>;
-            layers = <0 1>;
-        };
     };
 
     macros {
@@ -207,12 +183,26 @@
             bindings = <
 &kp Q              &kp W      &kp E         &kp R           &kp T                                      &kp Y        &kp U           &kp I                 &kp O       &kp P
 &kp A              &kp S      &kp D         &kp F           &kp G                                      &kp H        &kp J           &kp K                 &kp L       &kp MINUS
-&mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V           &kp B                                      &kp N        &kp M           &kp COMMA             &kp PERIOD  &kp SLASH
-&ok_ctrl           &ok_win    &kp LEFT_ALT  &kp LANGUAGE_2  &lt 1 SPACE  &kp LSHFT  &backspace_delete  &lt 2 ENTER  &kp LANGUAGE_1  &os_prt_sc_clipboard  &ok_ctrl    &kp RIGHT_SHIFT
+&mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V           &kp B                                      &kp N        &kp M           &kp COMMA             &kp PERIOD  &lt 4 SLASH
+&ok_ctrl           &ok_win    &kp LEFT_ALT  &kp LANGUAGE_2  &lt 2 SPACE  &kp LSHFT  &backspace_delete  &lt 3 ENTER  &kp LANGUAGE_1  &os_prt_sc_clipboard  &ok_ctrl    &kp RIGHT_SHIFT
                    &none      &kp RIGHT     &kp DOWN        &kp LEFT     &kp UP     &kp UP             &kp LEFT     &kp DOWN        &kp RIGHT             &none
 &mkp LCLK          &mkp RCLK  &mkp MCLK                                                                                             &mkp LCLK             &mkp RCLK   &mkp MCLK
 &mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                  &mkp MB4     &mkp MB5        &kp LG(TAB)           &kp LG(D)   &kp LCTRL
             >;
+        };
+
+        ARROW_LAYER {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &kp UP    &trans     &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans                                                    &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans    &trans     &trans
+            >;
+
+            label = "arrow";
         };
 
         SYMBOL_LAYER {
@@ -262,8 +252,8 @@
         compatible = "zmk,conditional-layers";
 
         Cond_Syslayer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <5>;
         };
     };
 };
