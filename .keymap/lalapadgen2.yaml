@@ -30,17 +30,17 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: arrow}
+  - /
   - ⌃/⌘
   - ⊞/⌃
   - $$mdi:apple-keyboard-option$$
-  - ABC
+  - {t: ABC, h: arrow}
   - {t: '$$mdi:keyboard-space$$', h: symbol}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
   - {t: '$$mdi:keyboard-return$$', h: number}
-  - あいう
-  - PrtScClip
+  - {t: あいう, h: arrow}
+  - PrtClip
   - ⌃/⌘
   - $$mdi:apple-keyboard-shift$$
   - ''
@@ -72,13 +72,13 @@ layers:
   arrow:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&ok_win_up'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB4'
   - $$mdi:arrow-up$$
-  - {t: ▽, type: trans}
+  - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -99,11 +99,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
