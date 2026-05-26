@@ -123,7 +123,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(DOWN)>, <&kp LC(DOWN)>, <&kp LG(DOWN)>;
 
-            label = "OS_WIN_LEFT";
+            label = "OS_WIN_DOWN";
         };
 
         os_prt_sc_clipboard: os_prt_sc_clipboard {
