@@ -118,10 +118,18 @@
             label = "OS_WIN_LEFT";
         };
 
+        os_win_down: os_win_down {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            bindings = <&kp LG(DOWN)>, <&kp LC(DOWN)>, <&kp LG(DOWN)>;
+
+            label = "OS_WIN_LEFT";
+        };
+
         os_prt_sc_clipboard: os_prt_sc_clipboard {
             compatible = "zmk,behavior-os-key";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(S))>, <&kp LC(LS(LG(4)))>, <&kp LG(LS(S))>;
+            bindings = <&kp LG(LS(S))>, <&kp LG(LS(LC(NUMBER_4 )))>, <&kp LG(LS(S))>;
 
             label = "OS_PRINT_SCREN_CLIPBOARD";
         };
