@@ -30,7 +30,7 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: system}
   - ⌃/⌘
   - ⊞/⌃
   - $$mdi:apple-keyboard-option$$
@@ -69,6 +69,75 @@ layers:
   - Gui+$$mdi:keyboard-tab$$
   - Gui+D
   - $$mdi:apple-keyboard-control$$
+  arrow:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:arrow-up$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   symbol:
   - ''
   - ''
@@ -237,15 +306,15 @@ layers:
   - '&zip_dyn_scale ZDS_XY ZDS_DEC'
   - '&zip_dyn_scale ZDS_SC ZDS_INC'
   - '&zip_dyn_scale ZDS_SC ZDS_DEC'
-  - '&zip_dyn_scale ZDS_ALL ZDS_RST'
+  - {t: '&zip_dyn_scale ZDS_ALL ZDS_RST', type: held}
   - ''
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
   - ''
-  - {type: held}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -286,15 +355,3 @@ combos:
 - p: [21, 20]
   k: LSHIFT
   l: [Default]
-- p: [6, 7]
-  k: ':'
-  l: [Default, symbol]
-- p: [16, 17]
-  k: ;
-  l: [Default, symbol]
-- p: [7, 8]
-  k: '"'
-  l: [Default, symbol]
-- p: [17, 18]
-  k: ''''
-  l: [Default, symbol]
