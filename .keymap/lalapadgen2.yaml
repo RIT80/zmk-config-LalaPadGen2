@@ -72,7 +72,7 @@ layers:
   arrow:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&ok_win_up'
+  - '&os_win_up'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -81,9 +81,9 @@ layers:
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&os_win_left'
+  - '&os_win_down'
+  - '&os_win_right'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-left$$
@@ -282,17 +282,17 @@ layers:
   - ''
   - '&sys_reset'
   - ''
+  - OUT BLE
   - '&bt_linux'
   - '&bt_win'
   - '&bt_mac'
-  - ''
   - ''
   - BT CLR ALL
   - '&sys_reset'
   - ''
   - ''
   - ''
-  - ''
+  - OUT USB
   - ''
   - ''
   - ''
