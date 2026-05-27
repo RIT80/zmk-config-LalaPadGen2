@@ -355,3 +355,15 @@ combos:
 - p: [21, 20]
   k: LSHIFT
   l: [Default]
+- p: [6, 7]
+  k: ':'
+  l: [Default, symbol]
+- p: [16, 17]
+  k: ;
+  l: [Default, symbol]
+- p: [7, 8]
+  k: '"'
+  l: [Default, symbol]
+- p: [17, 18]
+  k: ''''
+  l: [Default, symbol]
