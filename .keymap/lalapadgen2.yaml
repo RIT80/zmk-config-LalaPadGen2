@@ -71,9 +71,9 @@ layers:
   - $$mdi:apple-keyboard-control$$
   arrow:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&ok_prev_tab'
   - '&os_win_up'
-  - {t: ▽, type: trans}
+  - '&ok_next_tab'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
