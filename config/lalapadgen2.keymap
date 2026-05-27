@@ -137,6 +137,20 @@
 
             label = "OS_PRINT_SCREN_CLIPBOARD";
         };
+
+        ok_next_tab: os_key_next_tab {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            /*            Win           Mac              Lin  */
+            bindings = <&kp LC(TAB)>, <&kp LG(TAB)>, <&kp LC(TAB)>;
+        };
+        
+        ok_next_tab: os_key_next_tab {
+            compatible = "zmk,behavior-os-key";
+            #binding-cells = <0>;
+            /*            Win           Mac              Lin  */
+            bindings = <&kp LS(LC(TAB))>, <&kp LG(LS(TAB))>, <&kp LS(LC(TAB))>;
+        };
     };
 
     combos {
@@ -229,7 +243,7 @@
 
         ARROW_LAYER {
             bindings = <
-&trans  &trans        &os_win_up    &trans         &trans                  &trans  &mkp MB4  &kp UP    &mkp MB5   &trans
+&trans  &ok_prev_tab  &os_win_up    &ok_next_tab   &trans                  &trans  &mkp MB4  &kp UP    &mkp MB5   &trans
 &trans  &os_win_left  &os_win_down  &os_win_right  &trans                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &trans  &trans        &trans        &trans         &trans                  &trans  &trans    &trans    &trans     &trans
 &trans  &trans        &trans        &trans         &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans
