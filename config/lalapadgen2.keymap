@@ -145,7 +145,7 @@
             bindings = <&kp LC(TAB)>, <&kp LG(TAB)>, <&kp LC(TAB)>;
         };
         
-        ok_next_tab: os_key_next_tab {
+        ok_prev_tab: os_key_prev_tab {
             compatible = "zmk,behavior-os-key";
             #binding-cells = <0>;
             /*            Win           Mac              Lin  */
