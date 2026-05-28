@@ -43,7 +43,7 @@ layers:
   - PrtClip
   - ⌃/⌘
   - $$mdi:apple-keyboard-shift$$
-  - ''
+  - ESC
   - $$mdi:arrow-right$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-left$$
@@ -52,7 +52,7 @@ layers:
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - ''
+  - ESC
   - LCLK
   - RCLK
   - MCLK
@@ -164,8 +164,8 @@ layers:
   - F8
   - F9
   - F10
-  - ''
-  - ''
+  - ;
+  - ''''
   - ''
   - F11
   - F12
