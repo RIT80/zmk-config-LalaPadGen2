@@ -38,7 +38,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: symbol}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
-  - {t: '$$mdi:keyboard-return$$', h: number}
+  - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: あいう, h: arrow}
   - PrtClip
   - ⌃/⌘
@@ -139,85 +139,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   symbol:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '~'
-  - '|'
-  - +
-  - '{'
-  - '}'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - +
-  - '-'
-  - '*'
-  - /
-  - '='
-  - '`'
-  - \
-  - '='
-  - '['
-  - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  number:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
   - '1'
   - '2'
   - '3'
@@ -228,11 +149,21 @@ layers:
   - '8'
   - '9'
   - '0'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - '`'
+  - \
+  - '='
+  - '['
+  - ']'
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - ''
   - ''
   - ''
@@ -242,9 +173,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -276,75 +204,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  system:
-  - ''
-  - ''
-  - ''
-  - '&sys_reset'
-  - ''
-  - OUT BLE
-  - '&bt_linux'
-  - '&bt_win'
-  - '&bt_mac'
-  - ''
-  - BT CLR ALL
-  - '&sys_reset'
-  - ''
-  - ''
-  - ''
-  - OUT USB
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
-  - ''
-  - '&bootloader'
-  - '&zip_dyn_scale ZDS_XY ZDS_INC'
-  - '&zip_dyn_scale ZDS_XY ZDS_DEC'
-  - '&zip_dyn_scale ZDS_SC ZDS_INC'
-  - '&zip_dyn_scale ZDS_SC ZDS_DEC'
-  - '&zip_dyn_scale ZDS_ALL ZDS_RST'
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  system: ['', '', '', '&sys_reset', '', OUT BLE, '&bt_linux', '&bt_win', '&bt_mac', '', BT CLR ALL, '&sys_reset', '', '', '', OUT USB, '', '', '', '', '', '', BT
+      CLR, '', '&bootloader', '&zip_dyn_scale ZDS_XY ZDS_INC', '&zip_dyn_scale ZDS_XY ZDS_DEC', '&zip_dyn_scale ZDS_SC ZDS_INC', '&zip_dyn_scale ZDS_SC ZDS_DEC',
+    '&zip_dyn_scale ZDS_ALL ZDS_RST', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '', '', '', '', '']
 combos:
 - p: [0, 1]
   k: ESC
