@@ -207,10 +207,75 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  system: ['', '', '', '&sys_reset', '', OUT BLE, '&bt_linux', '&bt_win', '&bt_mac', '', BT CLR ALL, '&sys_reset', '', '', '', OUT USB, '', '', '', '', '', '', BT
-      CLR, '', '&bootloader', '&zip_dyn_scale ZDS_XY ZDS_INC', '&zip_dyn_scale ZDS_XY ZDS_DEC', '&zip_dyn_scale ZDS_SC ZDS_INC', '&zip_dyn_scale ZDS_SC ZDS_DEC',
-    '&zip_dyn_scale ZDS_ALL ZDS_RST', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '', '', '', '', '']
+  system:
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - ''
+  - OUT BLE
+  - '&bt_linux'
+  - '&bt_win'
+  - '&bt_mac'
+  - ''
+  - BT CLR ALL
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - OUT USB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - '&bootloader'
+  - '&zip_dyn_scale ZDS_XY ZDS_INC'
+  - '&zip_dyn_scale ZDS_XY ZDS_DEC'
+  - '&zip_dyn_scale ZDS_SC ZDS_INC'
+  - '&zip_dyn_scale ZDS_SC ZDS_DEC'
+  - '&zip_dyn_scale ZDS_ALL ZDS_RST'
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
 combos:
 - p: [0, 1]
   k: ESC
