@@ -292,7 +292,7 @@
         compatible = "zmk,conditional-layers";
 
         Cond_Syslayer {
-            if-layers = <2 3>;
+            if-layers = <2 1>;
             then-layer = <3>;
         };
     };
