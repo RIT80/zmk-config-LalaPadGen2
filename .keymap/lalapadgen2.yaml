@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: ⌃/⌘}
+  - {t: S, h: ⊞/⌃}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - J
-  - K
-  - L
-  - '-'
+  - {t: J, h: RSHIFT}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: ⊞/⌃}
+  - {t: ;, h: ⌃/⌘}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
@@ -36,8 +36,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: ABC, h: arrow}
   - {t: '$$mdi:keyboard-space$$', h: symbol}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
+  - $$mdi:backspace-reverse$$
+  - $$mdi:backspace$$
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: あいう, h: arrow}
   - PrtClip
@@ -286,15 +286,12 @@ combos:
 - p: [21, 20]
   k: LSHIFT
   l: [Default]
-- p: [6, 7]
-  k: ':'
-  l: [Default, symbol]
-- p: [16, 17]
-  k: ;
-  l: [Default, symbol]
 - p: [7, 8]
   k: '"'
   l: [Default, symbol]
 - p: [17, 18]
   k: ''''
   l: [Default, symbol]
+- p: [8, 9]
+  k: '-'
+  l: [Default]
