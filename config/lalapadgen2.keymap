@@ -155,6 +155,30 @@
 
             bindings = <&kp LS(LC(TAB))>, <&kp LG(LS(TAB))>, <&kp LS(LC(TAB))>;
         };
+
+        ok_mt2_win: ok_mt2_win {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            bindings = <&ok_win>, <&kp>;
+
+            label = "OK_MT2_WIN";
+        };
+
+        ok_mt2_ctrl: ok_mt2_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            bindings = <&ok_ctrl>, <&kp>;
+
+            label = "OK_MT2_CTRL";
+        };
     };
 
     combos {
@@ -178,18 +202,6 @@
             layers = <0>;
         };
 
-        combo_colon {
-            bindings = <&kp COLON>;
-            key-positions = <6 7>;
-            layers = <0 2>;
-        };
-
-        combo_semi_colon {
-            bindings = <&kp SEMI>;
-            key-positions = <16 17>;
-            layers = <0 2>;
-        };
-
         combo_double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <7 8>;
@@ -200,6 +212,12 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <17 18>;
             layers = <0 2>;
+        };
+
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <8 9>;
+            layers = <0>;
         };
     };
 
@@ -235,13 +253,13 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W       &kp E         &kp R             &kp T                                      &kp Y        &kp U             &kp I                 &kp O       &kp P
-&kp A              &kp S       &kp D         &kp F             &kp G                                      &kp H        &kp J             &kp K                 &kp L       &kp MINUS
-&mt2 LEFT_SHIFT Z  &kp X       &kp C         &kp V             &kp B                                      &kp N        &kp M             &kp COMMA             &kp PERIOD  &kp SLASH
-&ok_ctrl           &ok_win     &kp LEFT_ALT  &lt 1 LANGUAGE_2  &lt 2 SPACE  &kp LSHFT  &backspace_delete  &lt 2 ENTER  &lt 1 LANGUAGE_1  &os_prt_sc_clipboard  &ok_ctrl    &kp RIGHT_SHIFT
-                   &kp ESCAPE  &kp RIGHT     &kp DOWN          &kp LEFT     &kp UP     &kp UP             &kp LEFT     &kp DOWN          &kp RIGHT             &kp ESCAPE
-&mkp LCLK          &mkp RCLK   &mkp MCLK                                                                                                 &mkp LCLK             &mkp RCLK   &mkp MCLK
-&mkp MB4           &mkp MB5    &kp LG(TAB)   &kp LG(D)         &kp LCTRL                                  &mkp MB4     &mkp MB5          &kp LG(TAB)           &kp LG(D)   &kp LCTRL
+&kp Q              &kp W            &kp E            &kp R             &kp T                                   &kp Y        &kp U             &kp I                 &kp O            &kp P
+&ok_mt2_ctrl 0 A   &ok_mt2_win 0 S  &mt2 LEFT_ALT D  &mt2 LSHFT F      &kp G                                   &kp H        &mt2 RSHIFT J     &mt2 RIGHT_ALT K      &ok_mt2_win 0 L  &ok_mt2_ctrl 0 SEMI
+&mt2 LEFT_SHIFT Z  &kp X            &kp C            &kp V             &kp B                                   &kp N        &kp M             &kp COMMA             &kp PERIOD       &kp SLASH
+&ok_ctrl           &ok_win          &kp LEFT_ALT     &lt 1 LANGUAGE_2  &lt 2 SPACE  &kp DELETE  &kp BACKSPACE  &lt 2 ENTER  &lt 1 LANGUAGE_1  &os_prt_sc_clipboard  &ok_ctrl         &kp RIGHT_SHIFT
+                   &kp ESCAPE       &kp RIGHT        &kp DOWN          &kp LEFT     &kp UP      &kp UP         &kp LEFT     &kp DOWN          &kp RIGHT             &kp ESCAPE
+&mkp LCLK          &mkp RCLK        &mkp MCLK                                                                                                 &mkp LCLK             &mkp RCLK        &mkp MCLK
+&mkp MB4           &mkp MB5         &kp LG(TAB)      &kp LG(D)         &kp LCTRL                               &mkp MB4     &mkp MB5          &kp LG(TAB)           &kp LG(D)        &kp LCTRL
             >;
         };
 
