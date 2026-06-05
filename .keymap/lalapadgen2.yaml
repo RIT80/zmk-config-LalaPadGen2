@@ -41,8 +41,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: sub}
   - {t: あいう, h: arrow}
   - PrtClip
-  - ⊞/⌃
-  - ⌃/⌘
+  - $$mdi:keyboard-tab$$
+  - ESC
   - ESC
   - $$mdi:arrow-right$$
   - $$mdi:arrow-down$$
