@@ -246,39 +246,15 @@
     combos {
         compatible = "zmk,combos";
 
-        CONBO_ESC {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-            layers = <0>;
-        };
-
-        COMBO_TAB {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-            layers = <0>;
-        };
-
-        COMBO_LSHIFT {
-            bindings = <&kp LSHIFT>;
-            key-positions = <21 20>;
-            layers = <0>;
-        };
-
-        combo_double_quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        combo_single_quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <17 18>;
-            layers = <0>;
-        };
-
         combo_minus {
             bindings = <&kp MINUS>;
             key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        combo_minus2 {
+            bindings = <&kp MINUS>;
+            key-positions = <9 19>;
             layers = <0>;
         };
     };
