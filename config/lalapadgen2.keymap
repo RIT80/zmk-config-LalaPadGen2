@@ -341,13 +341,13 @@
 
         SUB_LAYER {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &kp LEFT_BRACE    &kp RIGHT_BRACE                  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp EQUAL
-&kp AT            &kp HASH           &kp DOLLAR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS
-&kp PERCENT       &kp AMPERSAND      &kp PIPE    &kp CARET         &kp TILDE                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH
-&kp GRAVE         &none              &none       &none             &none              &none  &none  &none         &none         &kp COMMA     &kp PERIOD    &kp BACKSLASH
-                  &none              &none       &none             &none              &none  &none  &none         &none         &none         &none
-&none             &none              &none                                                                                      &none         &none         &none
-&none             &none              &none       &none             &none                            &none         &none         &none         &none         &none
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &kp LEFT_BRACE    &kp RIGHT_BRACE                    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp EQUAL
+&kp AT            &kp HASH           &kp DOLLAR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS
+&kp PERCENT       &kp AMPERSAND      &kp PIPE    &kp CARET         &kp TILDE                          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH
+&kp GRAVE         &trans             &trans      &trans            &trans             &trans  &trans  &trans        &trans        &kp COMMA     &kp PERIOD    &kp BACKSLASH
+                  &trans             &trans      &trans            &trans             &trans  &trans  &trans        &trans        &trans        &trans
+&trans            &trans             &trans                                                                                       &trans        &trans        &trans
+&trans            &trans             &trans      &trans            &trans                             &trans        &trans        &trans        &trans        &trans
             >;
 
             label = "sub";
