@@ -475,28 +475,12 @@ path.combo { stroke: #7f7f7f; }
 <use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-control"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="42" y="15" width="28" height="26" class="combo"/>
-<text x="56" y="28" class="combo tap">ESC</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="42" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="49" y="77" height="14" width="14.0" class="combo tap glyph mdi:keyboard-tab"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="42" y="127" width="28" height="26" class="combo"/>
-<text x="56" y="140" class="combo tap">LSHIFT</text>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="546" y="15" width="28" height="26" class="combo"/>
-<text x="560" y="28" class="combo tap">&quot;</text>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
-<text x="560" y="84" class="combo tap">&#x27;</text>
-</g>
-<g class="combo combopos-5">
 <rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
 <text x="616" y="28" class="combo tap">-</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="630" y="43" width="28" height="26" class="combo"/>
+<text x="644" y="56" class="combo tap">-</text>
 </g>
 </g>
 </g>

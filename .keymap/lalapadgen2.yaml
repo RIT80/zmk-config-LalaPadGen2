@@ -277,21 +277,9 @@ layers:
   - ''
   - ''
 combos:
-- p: [0, 1]
-  k: ESC
-  l: [Default]
-- p: [10, 11]
-  k: $$mdi:keyboard-tab$$
-  l: [Default]
-- p: [21, 20]
-  k: LSHIFT
-  l: [Default]
-- p: [7, 8]
-  k: '"'
-  l: [Default]
-- p: [17, 18]
-  k: ''''
-  l: [Default]
 - p: [8, 9]
+  k: '-'
+  l: [Default]
+- p: [9, 19]
   k: '-'
   l: [Default]
