@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: ⌃/⌘}
+  - {t: S, h: ⊞/⌃}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - J
-  - K
-  - L
-  - '-'
+  - {t: J, h: RSHIFT}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: ⊞/⌃}
+  - {t: ;, h: ⌃/⌘}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
@@ -30,19 +30,19 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
   - ⌃/⌘
-  - ⊞/⌃
-  - $$mdi:apple-keyboard-option$$
+  - (
+  - )
   - {t: ABC, h: arrow}
-  - {t: '$$mdi:keyboard-space$$', h: symbol}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
-  - {t: '$$mdi:keyboard-return$$', h: symbol}
+  - {t: '$$mdi:keyboard-space$$', h: sub}
+  - $$mdi:backspace-reverse$$
+  - $$mdi:backspace$$
+  - {t: '$$mdi:keyboard-return$$', h: sub}
   - {t: あいう, h: arrow}
   - PrtClip
-  - ⌃/⌘
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-tab$$
+  - ESC
   - ESC
   - $$mdi:arrow-right$$
   - $$mdi:arrow-down$$
@@ -75,21 +75,21 @@ layers:
   - '&os_win_up'
   - Ctl+$$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
   - '&mkp MB4'
   - $$mdi:arrow-up$$
   - '&mkp MB5'
-  - {t: ▽, type: trans}
+  - PAGE UP
   - {t: ▽, type: trans}
   - '&os_win_left'
   - '&os_win_down'
   - '&os_win_right'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - END
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -138,38 +138,38 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  symbol:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  sub:
+  - ''''
+  - '"'
+  - '!'
+  - '{'
+  - '}'
   - '7'
   - '8'
   - '9'
   - '0'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - '`'
-  - \
   - '='
+  - '@'
+  - '#'
+  - $
   - '['
   - ']'
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - ;
-  - ''''
-  - ''
-  - F11
-  - F12
-  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - '-'
+  - '%'
+  - '&'
+  - '|'
+  - ^
+  - '~'
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - /
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,9 +178,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ','
+  - .
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,31 +208,31 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   system:
-  - ''
-  - ''
-  - ''
-  - '&sys_reset'
-  - ''
-  - OUT BLE
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - OUT TOG
   - '&bt_linux'
   - '&bt_win'
   - '&bt_mac'
   - ''
-  - BT CLR ALL
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - '&sys_reset'
-  - ''
-  - ''
-  - ''
-  - OUT USB
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&bootloader'
   - BT CLR
   - ''
-  - '&bootloader'
+  - ''
+  - F11
+  - F12
+  - ''
+  - ''
+  - ''
   - '&zip_dyn_scale ZDS_XY ZDS_INC'
   - '&zip_dyn_scale ZDS_XY ZDS_DEC'
   - '&zip_dyn_scale ZDS_SC ZDS_INC'
@@ -277,24 +277,9 @@ layers:
   - ''
   - ''
 combos:
-- p: [0, 1]
-  k: ESC
+- p: [8, 9]
+  k: '-'
   l: [Default]
-- p: [10, 11]
-  k: $$mdi:keyboard-tab$$
+- p: [9, 19]
+  k: '-'
   l: [Default]
-- p: [21, 20]
-  k: LSHIFT
-  l: [Default]
-- p: [6, 7]
-  k: ':'
-  l: [Default, symbol]
-- p: [16, 17]
-  k: ;
-  l: [Default, symbol]
-- p: [7, 8]
-  k: '"'
-  l: [Default, symbol]
-- p: [17, 18]
-  k: ''''
-  l: [Default, symbol]
