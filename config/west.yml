@@ -24,6 +24,6 @@ manifest:
       revision: v0.3
     - name: oskey
       remote: mentaldesk
-      revision: main
+      revision: v0.3.0
   self:
     path: config
