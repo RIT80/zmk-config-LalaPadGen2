@@ -246,12 +246,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <8 9>;
-            layers = <0>;
-        };
-
         combo_minus2 {
             bindings = <&kp MINUS>;
             key-positions = <9 19>;
