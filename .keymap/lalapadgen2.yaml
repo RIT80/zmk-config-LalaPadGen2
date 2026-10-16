@@ -277,9 +277,6 @@ layers:
   - ''
   - ''
 combos:
-- p: [8, 9]
-  k: '-'
-  l: [Default]
 - p: [9, 19]
   k: '-'
   l: [Default]
